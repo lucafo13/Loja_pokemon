@@ -13,6 +13,11 @@ const api = async() => {
 }
 api() // n sei o q to fazendo , isso aqui e so pra testar a fonte de imagens de pokemons sem precisar baixar uma caralhada de png
 gsap.registerPlugin(ScrollTrigger)
+const nada = gsap.to('.ran', {
+    opacity: 0,
+    paused: false
+    
+})
 const intro = gsap.timeline();
 intro
 .to(".aura", {
@@ -66,7 +71,7 @@ intro
         })
      
         continues = true
-        
+
 gsap.to(".gramita", {
     y: -200,
 
@@ -97,11 +102,13 @@ gsap.to(".flutua", {
         start: "top 0%", 
         toggleActions: "play none none none", 
         onEnter: () => {
+            nada.reverse()
             rotacaoPokebola.play();
             gsap.to('.ran', {
                      y: -15,
             duration: 1,
             repeat: -1,
+            opacity: 1,
             yoyo: true,
             scale: 0.99,
             ease: 'power2.inOut'
