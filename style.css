@@ -1,0 +1,187 @@
+@font-face {
+    font-family: "PokemonPixel";
+    src: url("./pokemon-fire-red-cufonfonts/vertopal.com_PKMNRSEU.ttf")
+         format("truetype");
+}
+main{
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    margin: 0;
+   
+    
+    box-sizing: border-box;
+   
+    font-family: monospace;
+}
+#intro{
+    position: fixed;
+    inset: 0;
+    background: #000;
+    z-index: 99999;
+}
+.gramita{
+    max-width: 100%;
+}
+.aura{
+    position: absolute;
+    width: 264px;
+    left: 0;
+    top: 40%;
+
+}
+.trainer {
+    position: absolute;
+    right: 50%;
+    bottom: 100%;
+    width: 100px;
+
+}
+.char{
+    max-width: 700px;
+}
+.ini{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.pokeTitle img{
+    max-width: 55%;
+}
+.hero{
+    height:100%;width: 100%;
+    background-image: url(assets/pokeImages/talvezfundo.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.frases{
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    padding: 20px;
+    max-width: 50%;
+    flex-direction: column;
+    font-weight: bold;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    max-width: 50%;
+}
+.butao{
+    width: 600px;
+    height: 100px;
+    background: transparent;
+    padding: 16px 18px;
+    border: 4px solid #111;
+    font-size: 50px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.butao:hover {
+    transform: scale(1.1);
+}
+.scroll{
+    position: relative;
+
+   color: white;
+    height: auto;
+
+    width: 100%;
+    background-color: #004c4c;
+}
+.thing{
+    
+}
+.flutua{
+    max-width: 150px;
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    opacity: 1;
+    bottom: 0;
+    transform: translateY(100%);
+  
+}
+.content{
+   
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.content h1{
+    font-size: 50px;
+    color: white;
+    
+}
+.box{
+    padding: 20px;
+    font-size: 25px;
+    width: 70%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid white;
+}
+.box h2{
+    border-bottom: 3px solid white;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: auto;
+    
+
+}
+
+.card{
+    width: auto;
+    margin: 20px;
+    max-width: 400px;
+    height: auto;
+    font-size: 25px;
+    border: 1px solid black;
+}
+.titulo{
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+.img-item{
+    position: relative;
+    max-width: 500px;
+    border-radius: 16px;
+   
+    object-fit: contain;
+}
+.img{
+    padding: 20px   ;
+}
+.preco{
+    padding: 10px;
+    border-top: 1px solid black;
+    color: green;
+    text-align: center;
+}
+.tit{
+    font-family: "PokemonPixel";
+    font-weight: bolder;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+.ran{
+    position: fixed; 
+    z-index: 9999;
+    bottom: 10%;
+}
