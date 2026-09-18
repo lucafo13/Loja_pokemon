@@ -1,102 +1,142 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main>
-
-        <section class="hero">
-            <div id="intro">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main>
+            <form action="/submit" method="POST">  
+              <label for="email">Email:</label>  
+              <input type="email" id="email" name="email" required>  
+              <label for="message">Message:</label>  
+              <textarea id="message" name="message" required></textarea>  
+              <!-- reCAPTCHA v2 Checkbox widget -->  
+              <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>  
+              <button type="submit">Send</button>  
+            </form>   
+            
+            <section class="hero">
+                <div id="intro">
                 <img class="aura" src="assets/ani-pokemons/pokebola.png" alt="">
                 <img src="" class="trainer" id="aurinha" alt="" />
-        </div>
-        
-        <div class="main">
-            <div class="pokeTitle">
-                <img src="assets/pokeImages/title.webp" alt="">
             </div>
-            <div class="frases">
-
-                <h1>Loja de cartas Pokemon  </h1>
-                <div class="btns">
-                    <button class="butao" id="butao">xyz</button>
+            
+            <div class="main">
+                <div class="pokeTitle">
+                    <img src="assets/pokeImages/title.webp" alt="">
                 </div>
-                <h4>Continue Scrollando:</h4>
+                <div class="frases">
+                    
+                    <h1>Loja de cartas Pokemon  </h1>
+                    <div class="btns">
+                        <button class="butao" id="butao">xyz</button>
+                    </div>
+                    <h4>Continue Scrollando:</h4>
+                </div>
+                <div class="ini">
+                    
+                    <img src="assets/pokeImages/pixelCharizaard.png" class="char" alt="">
+                </div>
             </div>
-            <div class="ini">
-
-                <img src="assets/pokeImages/pixelCharizaard.png" class="char" alt="">
-            </div>
-        </div>
-        <br>
-    </section>
-    
-    
-    <section class="scroll">
-        <img src="assets/pokeImages/gra.png" class="gramita" alt="">
-      
-
+            <br>
+        </section>
+        
+        
+        <section class="scroll">
+            <img src="assets/pokeImages/gra.png" class="gramita" alt="">
+            
             
             <h1 class="tit">Cartas Pokemon</h1>
             <img src="assets/pokeImages/pokémon-victini.gif" class="ran" alt="">
             <div class="cards">
                 <article class="card">
-                    <div class="titulo">victini</div>
-                    <div class="img"><img class="img-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaXmey2X7afgxMQvuouZxRD1URk0kk-UqKLTYETZp8VQ&s=10" alt=""></div>
-                    <div class="preco">zzz</div>
+                    <div class="titulo">Axew</div>
+                    <div class="img"><img class="img-item" src="img/Axew.webp" alt=""></div>
+                    <div class="preco"><button>Compra essa porra</button></div>
                 </article>
                 <article class="card">
-                    <div class="titulo">victini</div>
-                    <div class="img"><img class="img-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaXmey2X7afgxMQvuouZxRD1URk0kk-UqKLTYETZp8VQ&s=10" alt=""></div>
-                    <div class="preco">zzz</div>
-                </article>
-                <article class="card">
-                    <div class="titulo">victini</div>
-                    <div class="img"><img class="img-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaXmey2X7afgxMQvuouZxRD1URk0kk-UqKLTYETZp8VQ&s=10" alt=""></div>
-                    <div class="preco">zzz</div>
-                </article>
-                <article class="card">
-                    <div class="titulo">victini</div>
-                    <div class="img"><img class="img-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaXmey2X7afgxMQvuouZxRD1URk0kk-UqKLTYETZp8VQ&s=10" alt=""></div>
-                    <div class="preco">zzz</div>
-                </article>
-                <article class="card">
-                    <div class="titulo">victini</div>
-                    <div class="img"><img class="img-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaXmey2X7afgxMQvuouZxRD1URk0kk-UqKLTYETZp8VQ&s=10" alt=""></div>
-                    <div class="preco">zzz</div>
-                </article>
-                <article class="card">
-                    <div class="titulo">victini</div>
-                    <div class="img"><img class="img-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaXmey2X7afgxMQvuouZxRD1URk0kk-UqKLTYETZp8VQ&s=10" alt=""></div>
-                    <div class="preco">zzz</div>
-                </article>
-                <article class="card">
-                    <div class="titulo">victini</div>
-                    <div class="img"><img class="img-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaXmey2X7afgxMQvuouZxRD1URk0kk-UqKLTYETZp8VQ&s=10" alt=""></div>
-                    <div class="preco">zzz</div>
-                </article>
-                <article class="card">
-                    <div class="titulo">victini</div>
-                    <div class="img"><img class="img-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaXmey2X7afgxMQvuouZxRD1URk0kk-UqKLTYETZp8VQ&s=10" alt=""></div>
-                    <div class="preco">zzz</div>
-                </article>
-              
-            </div>
-    
-            <img src="assets/ani-pokemons/pokebola.png" class="flutua" alt="">
+                    <div class="titulo">Bubasauro</div>
+                <div class="img"><img class="img-item" src="img/buba.jpg" alt=""></div>
+                <div class="preco" class="check"><button>Compra essa porra</button></div>
+            </article>
+            <article class="card">
+                <div class="titulo">pixelCharizard</div>
+                <div class="img"><img class="img-item" src="img/chali.png" alt=""></div>
+                <div class="preco" class="check"><button>Compra essa porra</button></div>
+            </article>
+            <article class="card">
+                <div class="titulo">Charizard</div>
+                <div class="img"><img class="img-item" src="img/chari.webp" alt=""></div>
+                <div class="preco" class="check"><button>Compra essa porra</button></div>
+            </article>
+            <article class="card">
+                <div class="titulo">Charizard</div>
+                <div class="img"><img class="img-item" src="img/charizardRAro.webp" alt=""></div>
+                <div class="preco" class="check"><button>Compra essa porra</button></div>
+            </article>
+            <article class="card">
+                <div class="titulo">Eevee</div>
+                <div class="img"><img class="img-item" src="img/eeveeEx.png" alt=""></div>
+                <div class="preco" class="check"><button>Compra essa porra</button></div>
+            </article>
+            <article class="card">
+                <div class="titulo">Giratina</div>
+                <div class="img"><img class="img-item" src="img/giratinaFoda.png" alt=""></div>
+                <div class="preco" class="check"><button>Compra essa porra</button></div>
+            </article>
+            <article class="card">
+                <div class="titulo">Greninja</div>
+                <div class="img"><img class="img-item" src="img/greninga.webp" alt=""></div>
+                <div class="preco" class="check"><button>Compra essa porra</button></div>
+            </article>
+            <article class="card">
+                <div class="titulo">Inceneroar</div>
+                <div class="img"><img class="img-item" src="img/inceneroar.jpg" alt=""></div>
+                <div class="preco" class="check"><button>Compra essa porra</button></div>
+            </article>
+            <article class="card">
+                <div class="titulo">krookodile</div>
+                <div class="img"><img class="img-item" src="img/krookodile.jpg" alt=""></div>
+                <div class="preco" class="check"><button>Compra essa porra</button></div>
+            </article>
+            <article class="card">
+                <div class="titulo">Lopunny</div>
+                <div class="img"><img class="img-item" src="img/lopunny.webp" alt=""></div>
+                <div class="preco" class="check"><button>Compra essa porra</button></div>
+            </article>
+            <article class="card">
+                <div class="titulo">Mario Pikachu</div>
+                <div class="img"><img class="img-item" src="img/mario.jpg" alt=""></div>
+                <div class="preco" class="check"><button>Compra essa porra</button></div>
+            </article>
+            <article class="card">
+                <div class="titulo">Luigi Pikachu</div>
+                <div class="img"><img class="img-item" src="img/marioverde.jpg" alt=""></div>
+                <div class="preco" class="check"><button>Compra essa porra</button></div>
+            </article>
+            <article class="card">
+                <div class="titulo">Mewtwo</div>
+                <div class="img"><img class="img-item" src="img/mawtwo.jpg" alt=""></div>
+                <div class="preco" class="check"><button>Compra essa porra</button></div>
+            </article>
+
+            
+        </div>
+        
+        <img src="assets/ani-pokemons/pokebola.png" class="flutua" alt="">
     </section>
 </main>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.8/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.8/dist/lenis.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.11.0/dist/axios.min.js"></script>
-    <script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.11.0/dist/axios.min.js"></script>
+<script src="main.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </body>
 </html>

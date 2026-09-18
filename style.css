@@ -55,6 +55,7 @@ body {
     background-image: url(assets/pokeImages/talvezfundo.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
 }
 .frases{
@@ -137,9 +138,11 @@ body {
 }
 .cards{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     height: auto;
+    justify-content: center;
+    padding: 20px;
     
 
 }
@@ -147,29 +150,36 @@ body {
 .card{
     width: auto;
     margin: 20px;
+    justify-content: center;
     max-width: 400px;
+    border-radius: 16px;
     height: auto;
     font-size: 25px;
-    border: 1px solid black;
+    border: 3px solid white;
 }
 .titulo{
     text-align: center;
     padding: 20px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
 }
 .img-item{
     position: relative;
-    max-width: 500px;
+    max-width: 300px;
+    max-height: 450px;
+    margin: 0 auto;
     border-radius: 16px;
    
     object-fit: contain;
 }
 .img{
     padding: 20px   ;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }
 .preco{
     padding: 10px;
-    border-top: 1px solid black;
+    border-top: 1px solid white;
     color: green;
     text-align: center;
 }
@@ -184,4 +194,18 @@ body {
     position: fixed; 
     z-index: 9999;
     bottom: 10%;
+}
+.preco button{
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    color: white;
+    background-color: transparent;
+}
+.preco button:hover{
+    transform: scale(1.1);
 }
