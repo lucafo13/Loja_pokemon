@@ -2,6 +2,15 @@ const som = document.getElementById('music')
 window.addEventListener('click', () => {
     som.play()
 } )
+    
+const vic = document.getElementById('vic')
+vic.addEventListener('click',() => {
+    document.querySelector('.b').style.display = 'block'
+    setTimeout(() => {
+        
+        document.querySelector('.b').style.display = 'none'
+    }, 3000);
+})
 let continues = false;
 const api = async () => {
   let aura = await axios.get("https://pokeapi.co/api/v2/pokemon/dratini");
@@ -77,6 +86,16 @@ gsap.to(".gramita", {
     scrub: 1,
   },
 });
+gsap.to(".terra", {
+  y: -180,
+
+  scrollTrigger: {
+    trigger: ".sec",
+    start: "top top",
+    end: "bottom top",
+    scrub: 1,
+  },
+});
 const rotacaoPokebola = gsap.to(".flutua", {
   rotation: 360,
   duration: 2,
@@ -122,7 +141,7 @@ const buton = document.getElementById("butao");
 const tipoEhTipoAnTipoNadaVer = () => {
   document.body.classList.remove("arrogante");
 };
-tipoEhTipoAnTipoNadaVer();
+// tipoEhTipoAnTipoNadaVer();
 buton.addEventListener("click", () => {
   tipoEhTipoAnTipoNadaVer();
   alert("s");
