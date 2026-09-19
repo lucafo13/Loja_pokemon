@@ -72,6 +72,7 @@ body {
     background-image: url(assets/pokeImages/talvezfundo.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     background-color: orange;
 }
@@ -136,6 +137,12 @@ body {
     flex-direction: column;
     text-align: center;
 }
+.preco {
+  font-size: 12px;
+  text-align: right;
+  color: var(--frame);
+  font-weight: bold;
+}
 
 .preco button{
     border: 2px solid var(--frame);
@@ -175,6 +182,8 @@ body {
     justify-content: center;
     gap: 24px;
     height: auto;
+    justify-content: center;
+    padding: 20px;
     
 
 }
@@ -231,10 +240,12 @@ z-index: 4938;
 }
 .img-item{
     position: relative;
-    max-width: 480px;
+    max-width: 430px;
+    padding: 20px;
+    min-width: 480px;
     border-radius: 16px;
    
-    object-fit: contain;
+ 
     image-rendering: pixelated;
 }
 
@@ -264,4 +275,18 @@ z-index: 4938;
     position: fixed; 
     z-index: 9999;
     bottom: 10%;
+}
+.preco button{
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    color: white;
+    background-color: transparent;
+}
+.preco button:hover{
+    transform: scale(1.1);
 }

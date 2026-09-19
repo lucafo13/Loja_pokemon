@@ -129,7 +129,7 @@ const buton = document.getElementById('butao')
 const tipoEhTipoAnTipoNadaVer = () => {
     document.body.classList.remove('arrogante')
 }
-// tipoEhTipoAnTipoNadaVer()
+tipoEhTipoAnTipoNadaVer()
 buton.addEventListener('click', () => {
     tipoEhTipoAnTipoNadaVer()
     alert('s')
