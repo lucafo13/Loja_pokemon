@@ -33,7 +33,7 @@ intro
     
         
         .to("#intro", {
-            opacity: 0,
+            autoAlpha: 0,
             duration: 0.6,
             
         })
@@ -126,12 +126,16 @@ const hover = gsap.to('.butao', {
     paused: true
 })
 const buton = document.getElementById('butao')
-buton.addEventListener('mouseenter', () => {
-    hover.play()
+const tipoEhTipoAnTipoNadaVer = () => {
+    document.body.classList.remove('arrogante')
+}
+// tipoEhTipoAnTipoNadaVer()
+buton.addEventListener('click', () => {
+    tipoEhTipoAnTipoNadaVer()
+    alert('s')
 })
-buton.addEventListener('mouseleave', () => {
-    hover.reverse()
-})
+
+
 
 // gsap.to(".flutua", {
 
@@ -152,5 +156,14 @@ buton.addEventListener('mouseleave', () => {
 
 
 
+let array = [
+    "aura",
+    "do",
+    "arcanjoleto"
+]
 
+array.forEach(element => {
+    const aleatorio = Math.floor(Math.random() * array.length)
+    console.log(array[aleatorio])
+});
         
