@@ -1,3 +1,7 @@
+const som = document.getElementById('music')
+window.addEventListener('click', () => {
+    som.play()
+} )
 let continues = false;
 const api = async () => {
   let aura = await axios.get("https://pokeapi.co/api/v2/pokemon/dratini");
