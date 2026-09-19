@@ -313,3 +313,6 @@ z-index: 4938;
     opacity: 1;
     pointer-events: all;
 }
+.dirt{
+    background-color: brown;
+}
