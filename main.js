@@ -196,6 +196,6 @@ array.forEach((element) => {
 const btns = document.querySelectorAll('.fc')
 btns.forEach(element => {
     element.addEventListener('click', () => {
-        location.href= 'index.html#x'
+        location.href= 'pgns1/form.html'
     })
 });

@@ -5,41 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="sata.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 </head>
 
 <body>
 
-    <form action="p-4 bg-dark text-white rounded">
+    <form class="p-4 bg-white text-white ">
+        <div class="a">
 
+            <h1>Formulário de compra</h1>
+            <p>Apenas humanos DEVEM fazer</p>
+        </div>
+        <br>
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
         <br><br>
-
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
         <label for="sobrenome">Sobrenome:</label>
         <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome" required>
         <br><br>
-
+        
         <label for="email">Gmail:</label>
         <input type="email" id="email" name="email" placeholder="Digite seu gmail" required>
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
         <br><br>
-
+        
         <label for="senha">Senha:</label>
         <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
         <br><br>
-
+        
         <label for="telefone">Telefone:</label>
         <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
         <br><br>
-
+        
         <label for="data">Data de nascimento:</label>
         <input type="date" id="data" name="data" required>
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
         <br><br>
-
-
+        
+        
         <p>Sexo(genero):</p>
-
+        
         <select id="sexo" name="sexo" required>
             <option value="">Selecione</option>
             <option value="masculino">Masculino</option>
@@ -52,14 +65,15 @@
             <option value="terian">Terian</option>
             <option value="macho">Macho</option>
             <option value="femia">Femia</option>
-             <option value="69">69</option>
+            <option value="69">69</option>
         </select>
 
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
         <br><br>
-
-
+        
+        
         <p>Cor:</p>
-
+        
         <select id="cor" name="cor" required>
             <option value="">Selecione</option>
             <option value="branco">Branco</option>
@@ -74,12 +88,13 @@
             <option value="vermelho">Vermelho</option>
             <option value="cinza">Cinza</option>
         </select>
-
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
+        
         <br><br>
-
-
+        
+        
         <p>Estado civil:</p>
-
+        
         <select id="estadoCivil" name="estadoCivil" required>
             <option value="">Selecione</option>
             <option value="solteiro">Solteiro</option>
@@ -94,10 +109,11 @@
             <option value="distancia">Relacionamento a Distância</option>
             <option value="amigosBeneficios">Amigos com Benefícios</option>
         </select>
-
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
+        
         <br><br>
-
-
+        
+        
         <p>Tipo sanguíneo:</p>
 
         <select id="sangue" name="sangue" required>
@@ -111,9 +127,10 @@
             <option value="O+">O+</option>
             <option value="O-">O-</option>
         </select>
-
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
+        
         <br><br>
-
+        
 
         <label for="estado">Estado:</label>
 
@@ -148,35 +165,41 @@
             <option value="tocantins">Tocantins</option>
         </select>
 
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
         <br><br>
-
-
+        
+        
         <label for="cidade">Cidade:</label>
         <input type="text" id="cidade" name="cidade" placeholder="Digite a sua cidade" required>
         <br><br>
-
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
+        
         <label for="cep">CEP(cpf):</label>
         <input type="text" id="cep" name="cep" placeholder="Digite o seu CEP" required>
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
         <br><br>
-
+        
         <label for="time">Time de futebol:</label>
         <input type="text" id="time" name="time" placeholder="Digite o seu time de futebol" required>
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
         <br><br>
-
+        
         <label for="comida">4 numeros de tras do seu cartão:</label>
         <input type="text" id="comida" name="comida" placeholder="Digite os 4 numeros de tras do seu cartão" required>
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
         <br><br>
-
+        
         <label for="situa">
             Se você fosse contratar um assassino de aluguel, aceitaria contratar com nós?
         </label>
-
+        
         <input type="text" id="situa" name="situa" placeholder='Digite "sim" ou "não"' required>
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
         <br><br>
-
-
+        
+        
         <p>Qual a raiz quadrada de 4489?</p>
-
+        
         <select id="raiz" name="raiz" required>
             <option value="">Selecione</option>
             <option value="67">67</option>
@@ -184,12 +207,13 @@
             <option value="sla">Sei lá</option>
             <option value="para">Para de ser doente</option>
         </select>
-
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
+        
         <br><br>
-
-
+        
+        
         <p>Você gostou do formulário?</p>
-
+        
         <select id="gostou" name="gostou" required>
             <option value="">Selecione</option>
             <option value="sim">Sim</option>
@@ -198,6 +222,16 @@
             <option value="sla">Sei lá</option>
             <option value="foda">Vai se fuder</option>
         </select>
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
+        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
 
         <br><br>
 
@@ -207,6 +241,21 @@
 
     </form>
 
+    <dialog class="form-popup">
+        <div class="popup-content">
+            <p class="popup-title">Dados recebidos</p>
+            <p class="popup-message">Seu formulário foi enviado com sucesso.</p>
+            <div class="popup-data"></div>
+            <form method="dialog">
+                <button class="popup-close" onclick="location.href = '../index.html'" type="submit">Fechar</button>
+            </form>
+        </div>
+    </dialog>
+
+     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    
+     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
 </body>
 
 </html>

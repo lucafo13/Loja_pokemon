@@ -1,7 +1,31 @@
-* {
-    box-sizing: border-box;
+
+:root {
+    --px: 4px;
+  --bg: #0d1b1e;
+  --card-bg: #f4f1e4;
+  --art-bg: #dfe9dc;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+
+  --frame: #d9480f;
+  --frame-hover: #ff8a3c;
 }
 
+* {
+    box-sizing: border-box;
+      font-family: 'Press Start 2P', monospace;
+}
+
+.a{
+    position: relative;
+    text-align: center;
+    color: black;
+    flex-direction: column;
+    display: flex;
+    margin: 0 auto;
+}
+.a p{
+    text-align: center;
+}
 body {
     margin: 0;
     min-height: 100vh;
@@ -9,8 +33,11 @@ body {
     align-items: center;
     justify-content: center;
     padding: 40px 20px;
-    background: hsl(18, 68%, 56%);
+    /* background: hsl(18, 68%, 56%); */
     color: #202020;
+    background-image: url(../assets/pokeImages/talvezfundo.png);
+    background-attachment: fixed;
+    background-size: cover;
     font-family: Arial, sans-serif;
 }
 
@@ -21,7 +48,7 @@ form {
     padding: 24px 22px;
     background: #f3f8ff;
     border: 2px solid #1d1d1d;
-    border-radius: 18px;
+    
 }
 
 label,
@@ -48,7 +75,7 @@ select {
     background: #ffffff;
     color: #202020;
     border: 2px solid #1d1d1d;
-    border-radius: 14px;
+
     font-size: 0.95rem;
     font-family: inherit;
 }
@@ -69,7 +96,7 @@ input[type="reset"] {
     margin: 12px auto 0;
     padding: 14px 26px;
     border: 2px solid #1d1d1d;
-    border-radius: 10px;
+   
     color: #ffffff;
     font-size: 0.72rem;
     font-weight: 700;
@@ -78,10 +105,17 @@ input[type="reset"] {
 }
 
 input[type="submit"] {
-    background: #1f6fff;
-    width: 260px;
-    max-width: 100%;
-    height: 52px;
+   border: 2px solid var(--frame);
+    padding: 15px;
+    color: black;
+    background-color: transparent;
+    transition: .5s
+}
+input[type="submit"]:hover{
+ 
+    cursor: pointer;
+      box-shadow: 12px 12px 0 rgba(0,0,0,.5);
+    transform: translateY(-5px);
 }
 
 input[type="reset"] {
@@ -90,3 +124,75 @@ input[type="reset"] {
     max-width: 100%;
     height: 48px;
 }
+
+.form-popup {
+    width: min(430px, calc(100% - 32px));
+    padding: 0;
+    color: #202020;
+    background: #f3f8ff;
+    border: 4px solid var(--frame);
+    box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.5);
+}
+
+.form-popup::backdrop {
+    background: rgba(13, 27, 30, 0.78);
+}
+
+.popup-content {
+    padding: 28px 24px 24px;
+    text-align: center;
+}
+
+.popup-title {
+    margin: 0 0 18px;
+    color: var(--frame);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.popup-message {
+    margin: 0 0 24px;
+    color: #3a3a3a;
+    font-size: 0.75rem;
+    line-height: 1.8;
+}
+
+.popup-data {
+    max-height: 280px;
+    margin: 0 0 24px;
+    padding: 12px;
+    overflow-y: auto;
+    text-align: left;
+    border: 2px solid #1d1d1d;
+    background: #ffffff;
+}
+
+.popup-data-row {
+    margin: 0;
+    padding: 8px 0;
+    color: #3a3a3a;
+    border-bottom: 1px solid #d9480f;
+    font-size: 0.58rem;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+.popup-data-row:last-child {
+    border-bottom: 0;
+}
+
+.popup-close {
+    padding: 14px 20px;
+    color: #202020;
+    background: transparent;
+    border: 2px solid var(--frame);
+    font: inherit;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.popup-close:hover {
+    box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.5);
+    transform: translateY(-3px);
+}
+
