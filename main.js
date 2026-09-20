@@ -125,7 +125,7 @@ const tipoEhTipoAnTipoNadaVer = () => {
 tipoEhTipoAnTipoNadaVer();
 buton.addEventListener("click", () => {
   tipoEhTipoAnTipoNadaVer();
-  alert("s");
+  window.location.href = 'pgns1/login.html';
 });
 gsap.fromTo(
   ".card",
@@ -176,7 +176,8 @@ array.forEach((element) => {
 
 const btns = document.querySelectorAll('.fc')
 btns.forEach(element => {
+    element.onclick = null;
     element.addEventListener('click', () => {
-        location.href= 'index.html#x'
-    })
+        window.location.href = 'pgns1/pagarplus.html';
+    });
 });
