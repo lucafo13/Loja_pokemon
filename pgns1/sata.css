@@ -125,7 +125,7 @@ input[type="reset"] {
     height: 48px;
 }
 
-.form-popup {
+.formpopup {
     width: min(430px, calc(100% - 32px));
     padding: 0;
     color: #202020;
@@ -134,30 +134,30 @@ input[type="reset"] {
     box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.5);
 }
 
-.form-popup::backdrop {
+.formpopup::backdrop {
     background: rgba(13, 27, 30, 0.78);
 }
 
-.popup-content {
+.popupcontent {
     padding: 28px 24px 24px;
     text-align: center;
 }
 
-.popup-title {
+.popuptitle {
     margin: 0 0 18px;
     color: var(--frame);
     font-size: 1rem;
     line-height: 1.6;
 }
 
-.popup-message {
+.popupmessage {
     margin: 0 0 24px;
     color: #3a3a3a;
     font-size: 0.75rem;
     line-height: 1.8;
 }
 
-.popup-data {
+.popupdata {
     max-height: 280px;
     margin: 0 0 24px;
     padding: 12px;
@@ -167,7 +167,7 @@ input[type="reset"] {
     background: #ffffff;
 }
 
-.popup-data-row {
+.popupdatarow {
     margin: 0;
     padding: 8px 0;
     color: #3a3a3a;
@@ -177,11 +177,11 @@ input[type="reset"] {
     overflow-wrap: anywhere;
 }
 
-.popup-data-row:last-child {
+.popupdatarow:last-child {
     border-bottom: 0;
 }
 
-.popup-close {
+.popupclose {
     padding: 14px 20px;
     color: #202020;
     background: transparent;

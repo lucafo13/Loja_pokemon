@@ -8,34 +8,14 @@ prosinput.to('input', {
 })
 
 const form = document.querySelector('form');
-const popup = document.querySelector('.form-popup');
-const popupData = document.querySelector('.popup-data');
+const popup = document.querySelector('.formpopup');
+const popupData = document.querySelector('.popupdata');
 
-const fieldLabels = {
-    nome: 'Nome',
-    sobrenome: 'Sobrenome',
-    email: 'Email',
-    senha: 'Senha',
-    telefone: 'Telefone',
-    data: 'Data de nascimento',
-    sexo: 'Sexo',
-    cor: 'Cor',
-    estadoCivil: 'Estado civil',
-    sangue: 'Tipo sanguíneo',
-    estado: 'Estado',
-    cidade: 'Cidade',
-    cep: 'CEP',
-    time: 'Time de futebol',
-    comida: 'Cartão',
-    situa: 'Resposta',
-    raiz: 'Raiz quadrada',
-    gostou: 'Gostou'
-};
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    const valores = {
+    const resenha = {
         nome: document.getElementById('nome').value,
         sobrenome: document.getElementById('sobrenome').value,
         email: document.getElementById('email').value,
@@ -56,15 +36,14 @@ form.addEventListener('submit', (event) => {
         gostou: document.getElementById('gostou').value
     };
 
-    popupData.replaceChildren();
-
-    Object.entries(valores).forEach(([campo, valor]) => {
+    popupData.replaceChildren()
+    Object.entries(resenha).forEach(([campo, valor]) => {
         const linha = document.createElement('p');
-        linha.className = 'popup-data-row';
-        linha.textContent = `${fieldLabels[campo]}: ${valor}`;
-        popupData.append(linha);
+        linha.className = 'popupdatarow';
+        linha.textContent = `${campo}: ${valor}`
+        popupData.append(linha)
     });
 
-    console.log(valores);
+    
     popup.showModal();
 });
