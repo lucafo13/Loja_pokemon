@@ -1,13 +1,13 @@
 
 :root {
-    --px: 4px;
-  --bg: #0d1b1e;
-  --card-bg: #f4f1e4;
-  --art-bg: #dfe9dc;
-  --shadow-color: rgba(0, 0, 0, 0.5);
-
-  --frame: #d9480f;
-  --frame-hover: #ff8a3c;
+        --px: 4px;
+        --bg: #0d1b1e;
+        --card-bg: #fff4c2;
+        --art-bg: #dfe9dc;
+        --shadow-color: rgba(0, 0, 0, 0.5);
+        --frame: #e05a28;
+        --frame-hover: #ff8b3d;
+        --ink: #172a3a;
 }
 
 * {
@@ -29,34 +29,26 @@
 body {
     margin: 0;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 20px;
-<<<<<<< HEAD
-    background-image: url("../img/fundo2.jpg");
+    display: block;
+    padding: 48px 20px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-=======
-    /* background: hsl(18, 68%, 56%); */
->>>>>>> aee84640ce1c35717680d60ac0c0faeade5f8d14
-    color: #202020;
     background-image: url(../assets/pokeImages/talvezfundo.png);
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: Arial, sans-serif;
+    color: var(--ink);
 }
 
-form {
-    width: 560px;
-    max-width: 100%;
+body > form {
+    width: 60%;
     margin: 0 auto;
-    padding: 18px 20px 20px;
-    background: #f7dfe3;
-    border: 2px solid #1d1d1d;
-    
+    padding: 36px clamp(20px, 5vw, 50px);
+    flex-direction: column;
+    display: flex;
+    position: static;
+    background: var(--card-bg);
+    border: 5px solid var(--frame);
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.55);
 }
 
 label,
@@ -65,7 +57,7 @@ p {
     margin: 0 0 8px;
     font-size: 0.85rem;
     font-weight: 700;
-    color: #3a3a3a;
+    color: var(--ink);
     text-align: left;
     line-height: 1.6;
 }
@@ -80,9 +72,9 @@ select {
     display: block;
     padding: 12px 14px;
     margin: 0 0 18px;
-    background: #ffffff;
-    color: #202020;
-    border: 2px solid #1d1d1d;
+    background: #fffdf2;
+    color: var(--ink);
+    border: 2px solid var(--ink);
 
     font-size: 0.95rem;
     font-family: inherit;
@@ -91,7 +83,8 @@ select {
 input:focus,
 select:focus {
     outline: none;
-    border-color: #111111;
+    border-color: var(--frame);
+    box-shadow: 4px 4px 0 rgba(224, 90, 40, 0.25);
 }
 
 input::placeholder {
@@ -113,11 +106,11 @@ input[type="reset"] {
 }
 
 input[type="submit"] {
-<<<<<<< HEAD
+
     display: block;
     margin: 0 auto;
-    background: #dfeeff;
-    color: #1d1d1d;
+    background: var(--frame);
+    color: #fffdf2;
     width: 260px;
     max-width: 100%;
     height: 58px;
@@ -130,19 +123,11 @@ input[type="submit"] {
 input[type="submit"]:hover {
     transform: translateY(-2px);
     box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
-=======
-   border: 2px solid var(--frame);
-    padding: 15px;
-    color: black;
-    background-color: transparent;
-    transition: .5s
-}
-input[type="submit"]:hover{
- 
-    cursor: pointer;
-      box-shadow: 12px 12px 0 rgba(0,0,0,.5);
-    transform: translateY(-5px);
->>>>>>> aee84640ce1c35717680d60ac0c0faeade5f8d14
+
+        border-color: var(--frame-hover);
+        background: var(--frame-hover);
+        box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.5);
+        transform: translateY(-4px);
 }
 
 input[type="reset"] {
@@ -152,7 +137,6 @@ input[type="reset"] {
     height: 48px;
 }
 
-<<<<<<< HEAD
 .login-form {
     display: flex;
     flex-direction: column;
@@ -206,7 +190,7 @@ input[type="reset"] {
     transform: translateY(-2px);
     box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
 }
-=======
+
 .formpopup {
     width: min(430px, calc(100% - 32px));
     padding: 0;
@@ -223,6 +207,16 @@ input[type="reset"] {
 .popupcontent {
     padding: 28px 24px 24px;
     text-align: center;
+}
+
+.formpopup form {
+    width: auto;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
 }
 
 .popuptitle {
@@ -273,9 +267,8 @@ input[type="reset"] {
     cursor: pointer;
 }
 
-.popup-close:hover {
+.popupclose:hover {
     box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.5);
     transform: translateY(-3px);
 }
 
->>>>>>> aee84640ce1c35717680d60ac0c0faeade5f8d14

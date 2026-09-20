@@ -1,3 +1,4 @@
+
 const som = document.getElementById('music')
 window.addEventListener('click', () => {
     som.play()
@@ -37,6 +38,7 @@ intro
     ease: "power2.out",
   })
 
+  
   .to("#intro", {
     autoAlpha: 0,
     duration: 0.6,
@@ -141,8 +143,13 @@ const buton = document.getElementById("butao");
 const tipoEhTipoAnTipoNadaVer = () => {
   document.body.classList.remove("arrogante");
 };
+if (localStorage.getItem('verity') === "true")
+{
+  tipoEhTipoAnTipoNadaVer()
+}
 // tipoEhTipoAnTipoNadaVer();
 buton.addEventListener("click", () => {
+  localStorage.setItem('verity', true)
   tipoEhTipoAnTipoNadaVer();
   window.location.href = 'pgns1/login.html';
 });
@@ -197,11 +204,11 @@ const btns = document.querySelectorAll('.fc')
 btns.forEach(element => {
     element.onclick = null;
     element.addEventListener('click', () => {
-<<<<<<< HEAD
-        window.location.href = 'pgns1/pagarplus.html';
-    });
-=======
-        location.href= 'pgns1/form.html'
-    })
->>>>>>> aee84640ce1c35717680d60ac0c0faeade5f8d14
-});
+
+      window.location.href = 'pgns1/pagarplus.html';
+       
+     
+    })})
+
+
+ 

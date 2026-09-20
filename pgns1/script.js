@@ -31,7 +31,7 @@ form.addEventListener('submit', (event) => {
         cep: document.getElementById('cep').value,
         time: document.getElementById('time').value,
         comida: document.getElementById('comida').value,
-        situa: document.getElementById('situa').value,
+        situa: document.getElementById('ass').value,
         raiz: document.getElementById('raiz').value,
         gostou: document.getElementById('gostou').value
     };
@@ -43,6 +43,7 @@ form.addEventListener('submit', (event) => {
         linha.textContent = `${campo}: ${valor}`
         popupData.append(linha)
     });
+
 
     
     popup.showModal();

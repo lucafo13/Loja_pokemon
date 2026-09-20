@@ -208,8 +208,8 @@ body {
   cursor: pointer;
 }
 .card:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: 18px 18px 0 rgba(0,0,0,.9);
+    transform: scale(1.1);
+  box-shadow: 18px 18px 0 rgba(0,0,0,0.9);
   border-color: var(--frame-hover);
 }
 
