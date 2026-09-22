@@ -7,6 +7,9 @@
 
 # Conceito
 
-O site representa uma loja fictícia de cartas pokémon, de forma animada, divertida e interativa
+O site representa uma loja fictícia de cartas pokémon, de forma animada, divertida e interativa, onde o usuário, antes de qualquer compra, deve fazer seu login
 
-# aura do trabalhos
+
+
+
+![Uploading image.png…]()
