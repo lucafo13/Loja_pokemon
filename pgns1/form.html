@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="sata.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 </head>
 
 <body>
@@ -29,7 +28,7 @@
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" placeholder="Digite seu nome ex: Jacinto" required>
         <br>
-        <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
+        <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
         <label for="sobrenome">Sobrenome:</label>
         <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome ex: Pinto" required>
         <br><br>
@@ -250,8 +249,53 @@
         <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
 
         <br><br>
+        <div class="fundopretonocheck" id="fundopretonocheck"></div>
 
+        <div id="captchafeiki">
+    <p>Selecione os carros vermelhos carros:</p>
+    <div id="btns">
 
+        <button type="button" data-car="true">
+            <img src="../assets/pokeImages/caroo1.jpg" alt="Imagem 1">
+        </button>
+        
+        <button type="button" data-car="false">
+            <img src="../assets/pokeImages/otro.jpg" alt="Imagem 2">
+        </button>
+        
+        <button type="button" data-car="true">
+            <img src="../assets/pokeImages/mais.jpg" alt="Imagem 3">
+        </button>
+        
+        <button type="button" data-car="false">
+            <img src="../assets/pokeImages/six.jpg" alt="Imagem 4">
+        </button>
+        <button type="button" data-car="true">
+            <img src="../assets/pokeImages/caroo1.jpg" alt="Imagem 1">
+        </button>
+        <button type="button" data-car="true">
+            <img src="../assets/pokeImages/caroo1.jpg" alt="Imagem 1">
+        </button>
+        
+        <button type="button" data-car="false">
+            <img src="../assets/pokeImages/otro.jpg" alt="Imagem 2">
+        </button>
+        
+        <button type="button" data-car="true">
+            <img src="../assets/pokeImages/mais.jpg" alt="Imagem 3">
+        </button>
+        
+        <button type="button" data-car="false">
+            <img src="../assets/pokeImages/six.jpg" alt="Imagem 4">
+        </button>
+    </div>
+    <div id="res">
+
+        
+        <button type="button" id="verificar">Verificar</button>
+    </div>
+  <p id="resultado"></p>
+</div>
         <input type="submit" value="Enviar seu dados para um russo">
         
 
@@ -276,12 +320,18 @@
             </form>
         </div>
     </dialog>
-
-     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script>
+        document.querySelectorAll('.h-captcha').forEach(function (element) {
+            element.className = 'g-recaptcha';
+            element.dataset.sitekey = '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI';
+        });
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     
      <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
->>>>>>> aee84640ce1c35717680d60ac0c0faeade5f8d14
+
 </body>
 
 </html>
