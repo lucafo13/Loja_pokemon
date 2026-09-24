@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -206,6 +206,246 @@ Comprar outro item
 
 </main>
 </div>
+
+<script>
+
+function pix(){
+
+    document.getElementById("inicio").style.display="none";
+    document.getElementById("pixArea").style.display="block";
+
+    setTimeout(function(){
+
+        document.getElementById("pixArea").style.display="none";
+        document.getElementById("producao").style.display="block";
+
+    },5000);
+
+}
+
+function cartao(){
+
+    document.getElementById("inicio").style.display="none";
+    document.getElementById("cartaoArea").style.display="block";
+
+}
+
+function finalizarCartao(){
+
+    document.getElementById("cartaoArea").style.display="none";
+    document.getElementById("producao").style.display="block";
+
+}
+
+</script>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pagamento - WorldWeaver</title>
+<script src="script.js"></script>
+<link rel="shortcut icon" href="../img/logo.png">
+
+<style>
+
+    
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Press Start 2P', monospace;
+}
+
+body{
+    background-image: url(../assets/pokeImages/talvezfundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0%;
+    min-height: 100vh;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+main{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.card{
+    background:#fff4c2;
+    width:100%;
+    max-width:560px;
+    padding:34px clamp(20px, 5vw, 48px) 42px;
+    border:5px solid #e05a28;
+    box-shadow:10px 10px 0 rgba(0,0,0,0.55);
+}
+
+h2{
+    margin-bottom:24px;
+    color:#e05a28;
+    font-size:clamp(1rem, 3vw, 1.35rem);
+    line-height:1.7;
+    text-align:center;
+}
+
+p{
+    color:#172a3a;
+    font-size:.7rem;
+    line-height:1.8;
+}
+
+button{
+    border:2px solid #e05a28;
+    cursor:pointer;
+    padding:15px 20px;
+    color:#fffdf2;
+    background:#e05a28;
+    margin:10px 8px 0 0;
+    font-size:.65rem;
+    line-height:1.5;
+    transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+button:hover{
+    background:#ff8b3d;
+    border-color:#ff8b3d;
+    transform:translateY(-3px);
+    box-shadow:5px 5px 0 rgba(0,0,0,.5);
+}
+
+input{
+    width:100%;
+    padding:14px;
+    margin:10px 0;
+    border:2px solid #172a3a;
+    background:#fffdf2;
+    color:#172a3a;
+    font:inherit;
+    font-size:.65rem;
+}
+
+input:focus{
+    outline:none;
+    border-color:#e05a28;
+    box-shadow:4px 4px 0 rgba(224,90,40,.25);
+}
+
+#pixArea,
+#cartaoArea,
+#producao{
+    display:none;
+}
+
+.qrcode{
+    display:block;
+    width:min(250px, 100%);
+    margin:24px auto;
+    border:4px solid #172a3a;
+}
+
+footer{
+    background:#004c4c;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.botaoFinal{
+    display:inline-block;
+    text-decoration:none;
+    background:#e05a28;
+    color:white;
+    padding:12px 20px;
+    margin-top:20px;
+    font-size:.65rem;
+    line-height:1.7;
+}
+
+</style>
+</head>
+<body>
+
+<main>
+
+<div class="card">
+
+<div id="inicio">
+
+<h2>Escolha a forma de pagamento</h2>
+
+<button onclick="pix()">
+Pagar com PIX
+</button>
+
+<button onclick="cartao()">
+Pagar com Cartão
+</button>
+
+</div>
+
+<div id="pixArea">
+
+<h2>Pagamento via PIX</h2>
+
+<p>Escaneie o QR Code abaixo:</p>
+
+<br>
+
+<img src="../img/qrcode_402991066_6f1d6a6e5be49aec7a67fde9c308f946.png" class="qrcode">
+
+<p>
+Aguardando pagamento...
+</p>
+
+</div>
+
+<div id="cartaoArea">
+
+<h2>Pagamento via Cartão</h2>
+
+<input type="text" placeholder="Nome do titular">
+
+<input type="text" placeholder="Número do cartão">
+
+<input type="text" placeholder="Validade">
+
+<input type="text" placeholder="CVV">
+
+<button onclick="finalizarCartao()">
+Finalizar
+</button>
+
+</div>
+
+<div id="producao">
+
+<h2>Estamos enviando seu pedido o seu codigo é: 594829374. Para mais informações envie uma mensagem no nosso intagram.</h2>
+
+<p>
+Nossa equipe já recebeu seu pedido.
+</p>
+
+<a href="../index.html" class="botaoFinal">
+Comprar outro item
+</a>
+
+</div>
+
+</div>
+
+</main>
 
 <script>
 
